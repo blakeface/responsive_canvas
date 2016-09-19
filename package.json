@@ -1,0 +1,21 @@
+{
+  "name": "responsive_canvas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakeface/responsive_canvas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blakeface/responsive_canvas/issues"
+  },
+  "homepage": "https://github.com/blakeface/responsive_canvas#readme"
+}
