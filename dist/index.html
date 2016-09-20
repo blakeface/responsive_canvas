@@ -1,31 +1,27 @@
 <!DOCTYPE html>
-<html ng-app="RespCanv">
+<html>
 <head>
   <meta charset="utf-8">
   <title>Responsive Canvas</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" charset="utf-8"></script>
-  <script src="/app.min.js" charset="utf-8"></script>
-
+  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" media="screen" title="no title">
   <link rel="stylesheet" href="/style.css" media="screen" title="no title">
 </head>
-<body ng-controller="MainCtrl as vm">
+<body>
   <div class="header">
     <h3>🌥 Responsive Word Cloud 🌥</h3>
   </div>
   <div class="form-container">
-    <form novalidate ng-submit="vm.drawInputs(wordCount)">
+    <form class="prompt">
       <label for="firstPrompt">Number of Words in Word Cloud:</label>
-      <input id="firstPrompt" type="text" placeholder="10" ng-model="wordCount">
-      <input class="button-primary" type="submit">
+      <input type="text" id="firstPrompt" placeholder="10">
+      <input type="submit" class="button-primary" value="Submit">
     </form>
   </div>
   <div class="form-container">
-    <form novalidate>
-      <input type="text"
-      ng-repeat="i in vm.formInputs track by $index"
-      placeholder="Random word #{{$index+1}}">
+    <form class="inputs">
     </form>
   </div>
+  <script src="/app.min.js" charset="utf-8"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 # Responsive Canvas   
 
-Testing a responsive <canvas /> element.  
+Testing a responsive canvas element.  
 
 Specs:
   * Grunt  

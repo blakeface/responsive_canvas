@@ -1,15 +1,12 @@
 'use strict';
 
 (function () {
-  var dependencies = [];
-  angular.module('RespCanv', dependencies).controller('MainCtrl', MainCtrl);
-
-  MainCtrl.$inject = [];
-  function MainCtrl() {
-    var vm = this;
-    vm.inputs = 0;
-    vm.drawInputs = function (c) {
-      console.log(c);
-    };
-  }
+  console.log('on like donkey kong');
+  $('.prompt').submit(function (e) {
+    e.preventDefault();
+    var inputNum = Number($("input:first").val());
+    for (var i = 0; i <= inputNum; i++) {
+      if (i === inputNum) $('.inputs').append('<input type="submit" class="button-primary" value="create word🌥">');else $('.inputs').append('<input type="text" id="' + i + '" placeholder="Random Word #' + (i + 1) + '">');
+    }
+  });
 })();
