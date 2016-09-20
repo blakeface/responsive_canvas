@@ -7,5 +7,9 @@
   MainCtrl.$inject = [];
   function MainCtrl() {
     var vm = this;
+    vm.inputs = 0;
+    vm.drawInputs = function (c) {
+      console.log(c);
+    };
   }
 })();
