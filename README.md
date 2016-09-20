@@ -7,7 +7,7 @@ Specs:
   * AngularJS   
   * ES6
 
-To run: 
+To run:   
     $ npm i  
     $ npm start   
     $ grunt watch   
