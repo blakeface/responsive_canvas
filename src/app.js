@@ -4,8 +4,9 @@
   let words = [];
   $('.prompt').submit((e) => {
     e.preventDefault();
-    count = Number( $(".prompt input:first").val() );
-    if ( $('.inputs').children().length === 0 ) {
+    let num = $(".prompt input:first").val();
+    if ( num.length > 0 && $('.inputs').children().length === 0 ) {
+      count = Number( num );
       for (let i = 0; i <= count; i++) {
         if (i === count) $('.inputs').append(
           `<input type="submit" class="button-primary" value="create word🌥">`
@@ -21,5 +22,6 @@
     for (let i = 0; i < count; i++) {
       words.push( $(`#${i}`).val() );
     }
+    console.log(words);
   });
 })();
